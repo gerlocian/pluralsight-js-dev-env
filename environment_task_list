@@ -37,6 +37,36 @@ The development starter kit checklist
             e) npm start - slightly slow to start the service
 
 3) Development web server
+    a) Options
+        1) http-server
+            a) ultra simple
+            b) single command serves current directory
+            c) amazing logo
+        2) live-server
+            a) lightweight
+            b) supports live-reloading
+        3) express
+            a) comprehensive
+            b) highly configurable
+            c) production grade
+            d) can run it anywhere
+            e) koa and hapi are other alternative server options for this space
+        4) budo
+            a) integrates with Browserify
+            b) includes hot reloading - immediately see changes
+        5) webpack dev server
+            a) built in to webpack
+            b) serves from memory
+            c) includes hot reloading
+        6) browsersync
+            a) dedicated IP for sharing work on LAN
+            b) all interactions remain in sync
+            c) great for cross device testing
+            d) integrates with webpack, browserify, express and gulp
+    b) with the exception of express, these servers are not production ready.
+    c) sharing work-in-progress
+        1)
+
 4) Automation
 5) Transpiling
 6) Bundling
