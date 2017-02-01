@@ -17,7 +17,25 @@ The development starter kit checklist
     c) Editorconfig
         1) .editorconfig in the root of the project.
         2) http://editorconfig.org/
+
 2) Package management
+    a) Options
+        1) NPM - Most popular
+        2) Bower
+        3) JSPM - also a bundler (see bundlers)
+        4) Jam
+        5) Volo
+    b) Package security
+        1) Options
+            a) retire.js
+            b) Node Security Platform
+        2) When to test
+            a) Manually - Easy to forget
+            b) npm install - May have issues later after the install
+            c) production build time - expensive change later
+            d) pull request - expensive change later
+            e) npm start - slightly slow to start the service
+
 3) Development web server
 4) Automation
 5) Transpiling
