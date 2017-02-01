@@ -1,6 +1,22 @@
 The development starter kit checklist
 
 1) Editor
+    a) Options:
+        1) Atom
+        2) Webstorm
+        3) Brackets
+        4) VSCode
+    b) Look for
+        1) Strong ES2015+ support
+            a) Autocompletion
+            b) Parse ES6 imports
+            c) Report unused imports
+            d) Automated refactoring
+        2) Framework intelligence
+        3) Built in terminal
+    c) Editorconfig
+        1) .editorconfig in the root of the project.
+        2) http://editorconfig.org/
 2) Package management
 3) Development web server
 4) Automation
