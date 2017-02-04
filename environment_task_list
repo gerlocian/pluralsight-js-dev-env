@@ -65,9 +65,68 @@ The development starter kit checklist
             d) integrates with webpack, browserify, express and gulp
     b) with the exception of express, these servers are not production ready.
     c) sharing work-in-progress
-        1)
+        1) Options
+            a) localtunnel
+                1) lowest friction
+                2) easily share work on local machine
+                3) npm install localtunnel -g
+                4) start you app
+                5) lt --port <port> --subdomain <subdomain>
+                6) port is the port of the running service
+                7) subdomain is the subdomain i would like it to use
+            b) ngrok
+                1) popular
+                2) signup
+                3) install ngrok
+                4) install authtoken
+                5) start your app
+                6) ./ngrok http 80
+            c) surge
+                1) quickly host static files to public url (only static)
+                2) extreme simplicity
+                3) npm install -g surge
+                4) command: surge
+            d) now
+                1) quickly deploy node.js to the cloud
+                2) production ready
+                3) npm install -g now
+                4) create start script
+                5) command: now
+                6) more permanent solution
 
 4) Automation
+    a) Options:
+        1) Grunt
+            a) The "original"
+            b) configuration over code
+            c) writes intermediary files between steps
+            d) large plugin ecosystem
+        2) Gulp
+            a) in-memory streams (pipes)
+            b) fast
+            c) code over configuration
+            d) large plugin ecosystem
+        3) NPM Scripts
+            a) declared in package.json
+            b) leverage your OS' command line
+            c) directly use npm packages
+            d) call separate node scripts
+            e) convention-based pre/post hooks
+            f) leverage world's largest package manager
+    b) Why NPM Scripts?
+        1) Use tools directly
+        2) No need for separate plugins
+        3) simpler debugging
+        4) better documentation
+        5) easy to learn
+        6) simple
+        7) bit.ly/npmvsgulp
+        8) By convention, if you append "pre" or "post" to a script name, npm scripts will run those before or after
+            the script. For example:
+            "prestart": "echo 'Does something before start'",
+            "start": "echo 'Does start command'",
+            "poststart": "echo 'Does something after start'"
+
 5) Transpiling
 6) Bundling
 7) Linting
