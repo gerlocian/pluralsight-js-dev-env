@@ -128,6 +128,35 @@ The development starter kit checklist
             "poststart": "echo 'Does something after start'"
 
 5) Transpiling
+    a) Options
+        1) https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS
+        2) Babel
+            a) Modern, standards-based JS, today.
+            b) Write standardized JS
+            c) Leverage full JS ecosystem
+            d) Use experimental features earlier.
+            e) Quicker support for stage 0 features
+            f) No type definitions, annotations required.
+            g) ES6 imports are statically analyzable
+            h) Test, lint, babel, great libs, IDE = safety
+        3) TypeScript
+            a) Superset of JavaScript.
+            b) Enhanced autocompletion.
+            c) Enhanced readability.
+            d) Safer Refactoring
+            e) Clearer intent
+            f) Additional non-standard features.
+        4) Elm
+            a) Compiles down to JS
+            b) Clean syntax
+            c) Immutable data structures.
+            d) Friendly errors
+            e) Compile is assistive
+            f) All errors are compile time errors
+            g) Interops with JS
+            h) Learning curve when shifting to elm
+        5) There is no wrong answer, just different options.
+
 6) Bundling
 7) Linting
 8) Testing and continuous integration
