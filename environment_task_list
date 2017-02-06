@@ -158,6 +158,55 @@ The development starter kit checklist
         5) There is no wrong answer, just different options.
 
 6) Bundling
+    a) Module format
+        1) IIFE
+        2) Asynchronous Module Definition (AMD)
+        3) CommonJS (CJS) -- Recommended
+        4) Universal Module Definition (UMD)
+        5) ES6 Modules -- Highly recommended
+    b) Why ES6 Modules?
+        1) Standardized - future
+        2) Statically analyzable - Read and analyzed predictably
+            a) Improved autocompletion
+            b) Intelligent refactoring
+            c) Fails fast - find out bad issues sooner
+            d) Tree shaking - dead code elimination
+        3) Easy to read
+            a) Named imports
+            b) Default exports
+    c) Selecting a bundler
+        1) Options
+            a) browserify - simple
+                1) The original - first bundler to reach mass adoption
+                2) Bundle npm packages for the web
+                3) Large plugin ecosystem
+            b) webpack - comprehensive
+                1) Bundles more than just JS
+                2) Import CSS, images, etc like JS
+                3) built in hot-reloading web server
+                4) strategic bundle splitting
+                    a) separate bundles for different areas of the app
+                5) hot module reloading
+                6) Webpack2 offers tree shaking
+                7) Large adoption
+            c) rollup - tree shaking, performance
+                1) Tree shaking
+                2) Faster loading production code - all code in the same scope
+                3) Con: Quite new - fewer libraries at this point
+                4) Great for library authors
+                5) No hot reloading and code splitting yet.
+            d) jspm - runtime loader, package manager
+                1) Uses SystemJS, a universal module loader
+                2) Can load modules at run time
+                3) Has it's own package manager
+                4) Can install from NPM, git, etc
+                5) uses rollup
+        2) Debugging
+            a) Sourcemaps
+                1) Maps code back to the original source
+                2) Part of our build
+                3) Downloaded only if you open developer tools
+
 7) Linting
 8) Testing and continuous integration
 9) HTTP requests
