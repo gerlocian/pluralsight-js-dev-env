@@ -208,6 +208,60 @@ The development starter kit checklist
                 3) Downloaded only if you open developer tools
 
 7) Linting
+    a) Why Lint?
+        1) Enforce consistency
+        2) Avoids mistakes
+    b) Options
+        1) JSLint - original
+        2) JSHint - more configurability
+        3) ESLint - most popular and powerful
+        4) TSLint - linting for typescript
+    c) ESLint configuration decisions
+        1) Config format?
+            a) Supports different types of linting files.
+            b) Create a dedicated eslint rc file.
+                1) Not tied to npm
+            c) package.json
+                1) one less file in the project
+                2) eslintConfig: {}
+        2) Which built in rules?
+            a) Best to discuss as a team.
+        3) Warnings or errors?
+            a) Warning
+                1) Doesn't break the build
+                2) Can be ignored
+                3) Good for stylistic issues
+                4) Team must agree: Fix warnings
+            b) Error
+                1) Breaks the build
+                2) Cannot be ignored
+                3) Good for things that might cause bugs.
+                4) Team is forced to comply
+        4) Which plugins?
+            a) Plugins exist for react, angular, and node js.
+            b) github.com/dustinspeck/awesome-eslint
+        5) Use preset instead?
+            a) There is a preset from ESLint that they recommend.
+                1) Good shortcut to get started until team needs to change something.
+            b) There are popular starting points with AirBnB, Standard JS, and XO presets as well.
+    d) ESLint doesn't watch files.
+        1) eslint-loader: Webpack will run eslint everytime we run the build.
+            a) Re-lints all files upon save.
+        2) eslint-watch
+            a) ESLint wrapper that adds file watch
+            b) Not tied to webpack (bundler system agnostic)
+            c) Better warning / error formatting
+            d) Displays clean message
+            e) Easily lint tests and build scripts too
+    e) ESLint Doesn't support many experimental JavaScript features.
+        1) Supports ES6 and ES7 natively
+        2) Also supports object spread
+        3) babel-eslint -- Also lints stage 0-4 features
+    f) Why Lint via an automated build process?
+        1) One place to check
+        2) Universal configuration
+        3) Part of continuous integration
+
 8) Testing and continuous integration
 9) HTTP requests
 10) Project structure
