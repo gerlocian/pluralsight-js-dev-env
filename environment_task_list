@@ -263,6 +263,84 @@ The development starter kit checklist
         3) Part of continuous integration
 
 8) Testing and continuous integration
+    a) Testing styles
+        1) Unit - Single function or module testing
+        2) Integration - Interactions between modules
+        3) UI - Automate interactions with UI
+    b) Decisions
+        1) Testing Framework
+            a) Mocha - Most popular and configurable
+            b) Jasmine - Just as popular, assertion library built in
+            c) Tape - Leanest and simplist, minimal configuration
+            d) QUnit - Oldest. Built for JQuery
+            e) AVA - new aynchronous testing
+            f) Jest - From Facebook and popular for react
+        2) Assertion Libraries
+            a) An assertion is to declare what you expect.
+            b) Example: expect(2 + 2).to.equal(4)
+            c) Options - minor syntax difference
+                1) chai
+                2) should.js
+                3) expect
+        3) Helper Libraries
+            a) JSDOM
+                1) Simulate the browser's DOM
+                2) Run DOM-related tests without browser
+            b) Cheerio
+                1) jQuery for the server
+                2) Query virtual DOM using jQuery selectors
+        4) Where to run tests
+            a) Browser
+                1) Karma
+                2) Testem
+            b) Headless Browser
+                1) PhantomJS
+            c) In-memory DOM
+                1) JSDOM
+        5) Where do test files belong?
+            a) Centralized
+                1) Less "noise" in src folder
+                2) Deployment confusion
+                3) Inertia
+            b) Alongside
+                1) Easy imports
+                2) Clear visibility
+                3) Convenient to open
+                4) No recreating folder structure
+                5) Easy to move files
+        6) When should tests run?
+            a) Unit - test a small unit, fast
+                1) test should run when you hit save
+                2) rapid feedback
+                3) ttd
+                4) automatic
+                5) increases visibility
+            b) integration testing - test multiple units, slow
+                1) run on demand
+                2) run by QA
+        7) Why continuous integration?
+            a) Make sure that the code works when on another machine.
+            b) Tests for things like the following:
+                1) Forgot to commit new file
+                2) Forgot to update package.json
+                3) Commit doesn't run cross-platform
+                4) Node version conflicts
+                5) Bad merge
+                6) Didn't run tests before commit (cover desk in aluminum foil)
+                7) Catches mistakes quickly.
+        8) What does continuous integration do?
+            a) Run automated build
+            b) Run your tests
+            c) Check code coverage
+            d) Automate deployment
+        9) Choosing a CI Server
+            a) Travis CI - unix based
+            b) Appveyor - windows based
+            c) Jenkins
+            d) circleCI
+            e) semaphore
+            f) SnapCI
+
 9) HTTP requests
 10) Project structure
 11) Production build
